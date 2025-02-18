@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { PostType } from '@/interface'
 import axios from 'axios'
+import Text from './text/text'
 
 const HomePageComponents = () => {
   const [data, setData] = useState<PostType[]>()
@@ -47,6 +48,7 @@ const HomePageComponents = () => {
             </tbody>
           </table>
       }
+      <Text text='Home page' />
     </>
   )
 }
